@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrocerEase - a ecommerce grocerry platform</title>
+
+    <!-- code for font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- code for linking css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header class="header" id="headerbar">
+
+        <!-- For the logo of the nav bar located inside of header tag -->
+        <a href="#" class="logo">
+            <i class="fa fa-shopping-basket" aria-hidden="true">
+            </i>
+            GrocerEase
+        </a>
+
+        <!-- For navigation section located inside of nav tag -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#reviews">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <!-- Icons Div-->
+        <div class="icons">
+            <a href="#" onclick="">
+                <img src="./Icons/menu.png" alt="menubar" id="menubar" class="icon-grouping">
+            </a>
+
+            <a href="#" onclick="displaySearchBar()">
+                <img src="./Icons/search.png" alt="search" class="icon-grouping">
+            </a>
+
+            <a href="#">
+                <img src="./Icons/shopping-cart.png" alt="cart" class="icon-grouping">
+            </a>
+
+            <a href="#" onclick="signinMethod()">
+                <img src="./Icons/user.png" alt="user sign in" class="icon-grouping">
+            </a>
+
+            <a href="#">
+                <img src="./Icons/switch.png" alt="dark light mode" onclick="themeSwitcher()" class="icon-grouping">
+            </a>
+        </div>
+        <!-- End of Icon Div  -->
+
+        <!-- Input search box  -->
+        <form action="" method="post" class="search-form" id="searchformbar">
+            <div class="searchbarwrapper">
+                <input type="search" class="search-box" placeholder="search here...">
+                <img src="./Icons/search.png" id="searchbaricon" alt="search icon">
+            </div>
+        </form>
+        <!-- End of input search box  -->
+
+
+        <!-- Shopping cart section 
+        <div class="shopping-cart" id="usershoppingcart">
+        First image box  
+        <div class="box box1">
+            <img src="./image/watermelon.jpg" alt="watermelon on the store">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span>Rs: 100/-</span>
+                <span>Qty: 1</span>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+
+         Second Image box 
+        <div class="box box2">
+            <img src="./image/onion.jpg" alt="onion on the store">
+            <div class="content">
+                <h3>Onion</h3>
+                <span>Rs: 30/-</span>
+                <span>Qty: 1kg</span>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+Third image box  
+        <div class="box box3">
+            <img src="./image/fish.jpg" alt="Fish on the bumper sell">
+            <div class="content">
+                <h3>Fish</h3>
+                <span>Rs:300/-</span>
+                <span>Qty: 1kg</span>
+            </div>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>
+
+        <div class="total">
+            <p>Total: Rs. 430/-</p>
+        </div>
+
+        <div class="buttondiv">
+            <button id="checkoutbtn">
+                Checkout
+            </button>
+        </div>
+        </div> End of shopping cart -->
+
+
+        <!-- user signin form  -->
+        <form action="#" id="signinform" class="user-signin">
+            <p id="signintitle">login now</p>
+            <input type="email" placeholder="your email" id="emailbox">
+
+            <input type="pass
+            " placeholder="your password" id="passwordbox">
+
+
+            <input type="submit" value="Login" class="btn">
+        </form>
+
+    </header>
+
+    <!-- Header section  end-->
+</body>
+
+</html>

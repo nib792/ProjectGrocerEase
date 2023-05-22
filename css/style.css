@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
+
+/* Creating the variable  */
+:root {
+  --blue: skyblue;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.1rem 1rem rgba(0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitter", serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  /* to make the starting alphabet of each word uppercase  */
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  background-color: rgb(228, 228, 220);
+}
+
+.header {
+  position: fixed; /*Makes the header section to be fixed and stick around the top of the webpage*/
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex; /*To make it flexible such that in any of the device it is capable of displaying properly with greate responsiveness*/
+  align-items: center;
+  background-color: #fff;
+  /*Justify content below leaves the space between logo's anker tag and nav tag*/
+  justify-content: space-between;
+  padding: 2rem 9%;
+  box-shadow: var(--box-shadow);
+}
+
+/* logo manipulation  */
+.header .logo {
+  font-size: 1.7rem;
+  color: orange;
+  font-weight: bold;
+  /* margin-top: -2px; */
+}
+
+.header .logo i {
+  color: rgb(86, 177, 86);
+  margin-right: 0.3em;
+}
+
+.header .navbar a {
+  font-size: 1.4rem;
+  margin: 0 1em 0 1em;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .navbar a:hover {
+  color: var(--blue);
+  /* transition: 3s; */
+}
+
+.header .icons {
+  position: relative;
+  left: 3em;
+  right: 1em;
+}
+
+.header .icons a img {
+  height: 3em;
+  margin-right: 2.7em;
+}
+
+.icon-grouping {
+  /* background-color: red; */
+  /* border:2px solid black; */
+  padding: 0.3em;
+  border-radius: 4px;
+}
+
+#menubar {
+  display: none;
+}
+
+#searchformbar {
+  display: none;
+}
+
+.searchbarwrapper {
+  position: absolute;
+  top: 8em;
+  right: 3em;
+  background-color: white;
+  border: 2px solid black;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 40%;
+}
+
+.search-box {
+  width: 90%;
+  font-size: 1.3em;
+}
+
+#searchbaricon {
+  position: relative;
+  float: right;
+  height: 1.5em;
+  color: black;
+}
+
+#signinform {
+  background-color: white;
+  border: 2px solid pink;
+  width: 40%;
+  padding: 1em;
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  display: none;
+}
+#signintitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+#emailbox,
+#passwordbox {
+  border: 2px solid black;
+  background-color: rgb(207, 201, 201);
+  padding: 0.5em 0.2em 0.5em 0.2em;
+  text-align: center;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: none;
+  width: 80%;
+}
+
+.btn {
+  border: 2px solid black;
+  color: rgb(22, 21, 21);
+  text-transform: capitalize;
+  font-size: 1.5em;
+  padding: 0.1em 0.5em;
+  border-radius: 4px;
+  /* margin:auto; */
+}
+
+/* Media queries for the responsiveness of the site  */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    /* overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem; */
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
