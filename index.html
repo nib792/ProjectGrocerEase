@@ -2,75 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrocerEase - a ecommerce grocerry platform</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrocerEase - a ecommerce grocerry platform</title>
 
-    <!-- code for font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- code for font awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- code for linking css file -->
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+  <!-- code for linking css file -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <!-- Header section start -->
-    <header class="header" id="headerbar">
+  <!-- Header section start -->
+  <header class="header" id="headerbar">
+    <!-- For the logo of the nav bar located inside of header tag -->
+    <a href="#" class="logo">
+      <i class="fa fa-shopping-basket" aria-hidden="true"> </i>
+      GrocerEase
+    </a>
 
-        <!-- For the logo of the nav bar located inside of header tag -->
-        <a href="#" class="logo">
-            <i class="fa fa-shopping-basket" aria-hidden="true">
-            </i>
-            GrocerEase
-        </a>
+    <!-- For navigation section located inside of nav tag -->
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#features">features</a>
+      <a href="#products">products</a>
+      <a href="#categories">categories</a>
+      <a href="#reviews">review</a>
+      <a href="#blogs">blogs</a>
+    </nav>
 
-        <!-- For navigation section located inside of nav tag -->
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#products">products</a>
-            <a href="#categories">categories</a>
-            <a href="#reviews">review</a>
-            <a href="#blogs">blogs</a>
-        </nav>
+    <!-- Icons Div-->
+    <div class="icons">
+      <a href="#" onclick="">
+        <img src="./Icons/menu.png" alt="menubar" id="menubar" class="icon-grouping" />
+      </a>
 
-        <!-- Icons Div-->
-        <div class="icons">
-            <a href="#" onclick="">
-                <img src="./Icons/menu.png" alt="menubar" id="menubar" class="icon-grouping">
-            </a>
+      <a href="#" onclick="displaySearchBar()">
+        <img src="./Icons/search.png" alt="search" class="icon-grouping" />
+      </a>
 
-            <a href="#" onclick="displaySearchBar()">
-                <img src="./Icons/search.png" alt="search" class="icon-grouping">
-            </a>
+      <a href="#">
+        <img src="./Icons/shopping-cart.png" alt="cart" class="icon-grouping" />
+      </a>
 
-            <a href="#">
-                <img src="./Icons/shopping-cart.png" alt="cart" class="icon-grouping">
-            </a>
+      <a href="#" onclick="signinMethod()">
+        <img src="./Icons/user.png" alt="user sign in" class="icon-grouping" />
+      </a>
 
-            <a href="#" onclick="signinMethod()">
-                <img src="./Icons/user.png" alt="user sign in" class="icon-grouping">
-            </a>
+      <a href="#">
+        <img src="./Icons/switch.png" alt="dark light mode" onclick="themeSwitcher()" class="icon-grouping" />
+      </a>
+    </div>
+    <!-- End of Icon Div  -->
 
-            <a href="#">
-                <img src="./Icons/switch.png" alt="dark light mode" onclick="themeSwitcher()" class="icon-grouping">
-            </a>
-        </div>
-        <!-- End of Icon Div  -->
+    <!-- Input search box  -->
+    <form action="" method="post" class="search-form" id="searchformbar">
+      <div class="searchbarwrapper">
+        <input type="search" class="search-box" placeholder="search here..." />
+        <img src="./Icons/search.png" id="searchbaricon" alt="search icon" />
+      </div>
+    </form>
+    <!-- End of input search box  -->
 
-        <!-- Input search box  -->
-        <form action="" method="post" class="search-form" id="searchformbar">
-            <div class="searchbarwrapper">
-                <input type="search" class="search-box" placeholder="search here...">
-                <img src="./Icons/search.png" id="searchbaricon" alt="search icon">
-            </div>
-        </form>
-        <!-- End of input search box  -->
-
-
-        <!-- Shopping cart section 
+    <!-- Shopping cart section 
         <div class="shopping-cart" id="usershoppingcart">
         First image box  
         <div class="box box1">
@@ -115,22 +112,55 @@ Third image box
         </div>
         </div> End of shopping cart -->
 
+    <!-- user signin form  -->
+    <form action="#" id="signinform" class="user-signin">
+      <p id="signintitle">login now</p>
+      <input type="email" placeholder="your email" id="emailbox" />
 
-        <!-- user signin form  -->
-        <form action="#" id="signinform" class="user-signin">
-            <p id="signintitle">login now</p>
-            <input type="email" placeholder="your email" id="emailbox">
+      <input type="pass
+            " placeholder="your password" id="passwordbox" />
 
-            <input type="pass
-            " placeholder="your password" id="passwordbox">
+      <input type="submit" value="Login" class="btn" />
+    </form>
+  </header>
 
+  <!-- Header section  end-->
+<!--banner section start-->
+<section class="home" id="home">
+  <div class="content">
+    <h3>Fresh and <span> Organic</span> Products For You</h3>
+    <p>GrocerEase an innovative tech designed revolutionize the way  of modern shopping for the modern users</p>
+    <a href="#" class="btn" >Shop Now</a>
+  </div>
+</section>
+  <!--banner section-->
+  <!--Our Features Section-->
+  <section class="features" id="features">
+    <h1 class="heading"> Our <span>Features</span> </h1>
+<div class="box-container">
+  <div class="box">
+    <img src="image/apple.jpg" alt="Red Apples" >
+    <h3>Fresh And Organic Apples</h3>
+    <p>Red Fresh Apples from Mustang</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+  <div class="box">
+    <img src="image/watermelon.jpg" alt="Red Apples" >
+    <h3>Fresh And Organic  Watermelon</h3>
+    <p>Fresh Watermelon From Jhapa</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+  <div class="box">
+    <img src="image/mango.jpg" alt="Red Apples" >
+    <h3>Fresh And Organic Mangoes</h3>
+    <p>Fresh Mangoes ,Sweet Tender and Delicious</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+</div>
 
-            <input type="submit" value="Login" class="btn">
-        </form>
+  </section>
+  <!--Our Features Section-->
 
-    </header>
-
-    <!-- Header section  end-->
 </body>
 
 </html>
