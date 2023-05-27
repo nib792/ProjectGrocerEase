@@ -2,10 +2,11 @@
 
 /* Creating the variable  */
 :root {
+  --green: green;
   --blue: skyblue;
   --black: #130f40;
   --light-color: #666;
-  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0,.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
   --border: 2rem solid rgba(0, 0, 0, 0.1);
   --outline: 0.1rem solid rgba(0, 0, 0.1);
 }
@@ -35,7 +36,7 @@ body {
   background-color: rgb(228, 228, 220);
 }
 
-/* css code for banner*/
+/* css code for banner start */
 
 .header {
   position: fixed;
@@ -51,6 +52,7 @@ body {
   justify-content: space-between;
   padding: 2rem 9%;
   box-shadow: var(--box-shadow);
+  z-index: 1;
 }
 
 /* logo manipulation  */
@@ -159,6 +161,13 @@ body {
   width: 80%;
 }
 
+
+/*css code for banner done by rabin*/
+section {
+  padding: 2rem 9%;
+}
+
+/* css code fo banner end*/
 .heading {
   text-align: center;
   padding: 2rem 0;
@@ -169,11 +178,11 @@ body {
 }
 
 .heading span {
-  background: var(--white);
-  color: green;
+  background: var(--green);
+  color: white;
   display: inline-block;
-  padding: 0.5rem ;
-  clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+  padding: 0.8rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 
 }
 
@@ -181,23 +190,20 @@ body {
   border: 2px solid black;
   color: rgb(22, 21, 21);
   text-transform: capitalize;
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 0.1em 0.5em;
   border-radius: 4px;
+
   /* margin:auto; */
 }
 
 
-/*css code for banner*/
-section {
-  padding: 2rem 9%;
-}
 
 .home {
   display: flex;
   justify-content: center;
   border: 0px solid;
-  background: url(../image/carousel/vegMore.jpg) no-repeat;
+  background: url(../image/banner-img.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 17rem;
@@ -228,15 +234,17 @@ section {
   padding: 1rem;
   line-height: 1.8;
 }
-/*Features*/
-.features .box-container{
- 
+
+/*Our Features section start by rabin*/
+.features .box-container {
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
-.features .box-container .box{
- 
+
+.features .box-container .box {
+
   padding: 3rem 2rem;
   background-color: white;
   outline: var(--outline);
@@ -244,14 +252,87 @@ section {
   text-align: center;
   box-shadow: var(--box-shadow);
 }
-.features .box-container .box img{
+
+.features .box-container .box img {
   width: 300px;
   height: 200px;
 }
-.features .box-container .box:hover{
+
+.features .box-container .box:hover {
+  box-shadow: 1px 1px 10px 4px var(--green);
+
+}
+
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: var(--black);
+
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+
+}
+
+/*Features section end */
+/* our products section css start*/
+.products {
+  border: 0px solid;
+}
+
+.products .product-slider {
+  border: 0px solid;
+  padding: 1rem;
+
+}
+
+.products .product-slider:first-child {
+  margin-bottom: 2rem;
+
+}
+
+.products .product-slider .box {
+  border: 0px solid red;
+  background: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(var(--box-shadow));
+  transition: 0.2sec linear;
+
+}
+
+.products .product-slider .box:hover {
   box-shadow: 1px 1px 10px 4px var(--green);
 }
-/*Features*/
+
+.products .product-slider .box img {
+  height: 15rem;
+
+}
+
+.products .product-slider .box h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.products .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--light-color);
+  padding: .5rem 0;
+}
+
+.products .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: orange;
+  padding: 2rem 0;
+}
 
 
 
@@ -281,7 +362,8 @@ section {
   html {
     font-size: 50%;
   }
-  .heading{
+
+  .heading {
     font-size: 2.5rem;
   }
 }
