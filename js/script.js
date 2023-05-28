@@ -45,3 +45,29 @@ function signinMethod() {
         signinStatus.style.display = 'none';
     }
 }
+
+/*our products section carousel effects slider using cdn slider type responsive breakpoints done for the section of our products*/
+var swiper = new Swiper(".product-slider", {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+
+        },
+        768: {
+            slidesPerView: 2,
+
+        },
+        1020: {
+            slidesPerView: 3,
+
+        },
+    },
+});
+

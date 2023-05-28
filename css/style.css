@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
   padding: 2rem 9%;
   box-shadow: var(--box-shadow);
-  z-index: 1;
+  z-index: 200;
 }
 
 /* logo manipulation  */
@@ -237,7 +237,6 @@ section {
 
 /*Our Features section start by rabin*/
 .features .box-container {
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
@@ -333,6 +332,52 @@ section {
   color: orange;
   padding: 2rem 0;
 }
+
+/*Our POroducts section end of CSS done by (rabin)*/
+
+
+/*Product categories secion start done by (rabin)*/
+.categories .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.categories .box-container .box {
+  padding: 3rem 0;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+
+}
+
+.categories .box-container .box:hover {
+  box-shadow: 1px 1px 10px 4px var(--green);
+
+}
+
+.categories .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.categories .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+
+
+
+
+/*Product categories secion end done by (rabin)*/
+
 
 
 
