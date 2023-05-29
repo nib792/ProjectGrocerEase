@@ -22,18 +22,17 @@ function themeSwitcher() {
     }
 }
 
+function shoppingCartCaller() {
+    var cartStatus = document.getElementById("shoppingcart");
 
-// function displayCart() {
-//     var cartDisplayStatus = document.getElementById('usershoppingcart');
+    if (cartStatus.style.display == 'none') {
+        cartStatus.style.display = 'block';
+    }
+    else {
+        cartStatus.style.display = 'none';
+    }
+}
 
-//     if (cartDisplayStatus.style.display == "none") {
-//         cartDisplayStatus.style.display = "block";
-//     }
-
-//     else {
-//         cartDisplayStatus.style.display = "none";
-//     }
-// }
 
 
 function signinMethod() {

@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GrocerEase - a ecommerce grocerry platform</title>
 
+  <link rel="icon" href="./image/favicon.PNG" type="image/icon
+  ">
+
   <!-- code for font awesome cdn  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -14,6 +17,8 @@
   <link rel="stylesheet" href="./css/style.css" />
   <!--link for carousel slider in our products section-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+
 
 </head>
 
@@ -32,8 +37,6 @@
       <a href="#features">features</a>
       <a href="#products">products</a>
       <a href="#categories">categories</a>
-      <a href="#reviews">review</a>
-      <a href="#blogs">blogs</a>
     </nav>
 
     <!-- Icons Div-->
@@ -47,7 +50,7 @@
       </a>
 
       <a href="#">
-        <img src="./Icons/shopping-cart.png" alt="cart" class="icon-grouping" />
+        <img src="./Icons/shopping-cart.png" alt="cart" class="icon-grouping" onclick="shoppingCartCaller()" />
       </a>
 
       <a href="#" onclick="signinMethod()">
@@ -69,50 +72,76 @@
     </form>
     <!-- End of input search box  -->
 
-    <!-- Shopping cart section 
-        <div class="shopping-cart" id="usershoppingcart">
-        First image box  
-        <div class="box box1">
-            <img src="./image/watermelon.jpg" alt="watermelon on the store">
-            <div class="content">
-                <h3>watermelon</h3>
-                <span>Rs: 100/-</span>
-                <span>Qty: 1</span>
-            </div>
-            <i class="fa fa-trash-o" aria-hidden="true"></i>
-        </div>
 
-         Second Image box 
-        <div class="box box2">
-            <img src="./image/onion.jpg" alt="onion on the store">
-            <div class="content">
-                <h3>Onion</h3>
-                <span>Rs: 30/-</span>
-                <span>Qty: 1kg</span>
-            </div>
-            <i class="fa fa-trash-o" aria-hidden="true"></i>
-        </div>
-Third image box  
-        <div class="box box3">
-            <img src="./image/fish.jpg" alt="Fish on the bumper sell">
-            <div class="content">
-                <h3>Fish</h3>
-                <span>Rs:300/-</span>
-                <span>Qty: 1kg</span>
-            </div>
-            <i class="fa fa-trash-o" aria-hidden="true"></i>
-        </div>
+    <!-- SHOPPING CART START  -->
+    <div class="shopping-cart" id="shoppingcart">
 
-        <div class="total">
-            <p>Total: Rs. 430/-</p>
+      <!-- first internal div  -->
+      <div class="box">
+        <i class="fa fa-trash
+        "></i>
+        <img src="./image/cart-img-1.png" alt="Watermelon on cart">
+        <div class="content">
+          <h3>
+            Watermelon
+          </h3>
+          <span class="price">
+            Rs100/-
+          </span>
+          <span class="quantity">
+            Qty: 1
+          </span>
         </div>
+      </div>
 
-        <div class="buttondiv">
-            <button id="checkoutbtn">
-                Checkout
-            </button>
+      <!-- Second internal Div  -->
+      <div class="box">
+        <i class="fa fa-trash
+              "></i>
+        <img src="./image/cart-img-2.png" alt="Onion on the cart">
+        <div class="content">
+          <h3>
+            Onion
+          </h3>
+          <span class="price">
+            Rs25/-
+          </span>
+          <span class="quantity">
+            Qty: 1kg
+          </span>
         </div>
-        </div> End of shopping cart -->
+      </div>
+
+      <!-- Third internal div  -->
+      <div class="box">
+        <i class="fa fa-trash
+              "></i>
+        <img src="./image/cart-img-3.png" alt="Chicekn on the cart">
+        <div class="content">
+          <h3>
+            Chicken
+          </h3>
+          <span class="price">
+            Rs400/-
+          </span>
+          <span class="quantity">
+            Qty: 1
+          </span>
+        </div>
+      </div>
+
+      <!-- total section  -->
+      <div class="total">
+        total : Rs:525/-
+      </div>
+
+      <!-- checkout button  -->
+      <a href="#" class="btn">Checkout</a>
+
+    </div>
+    <!-- SHOPPING CART END  -->
+
+
 
     <!-- user signin form  -->
     <form action="#" id="signinform" class="user-signin">
@@ -344,15 +373,6 @@ Third image box
 
 
   <!--Our categories section end done by (rabin) -->
-
-
-
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 
