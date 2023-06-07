@@ -10,15 +10,24 @@ function displaySearchBar() {
 
 
 function themeSwitcher() {
-    var bodyTheme = document.body;
+    var bodyTheme = document.body; 
+    
     if (bodyTheme.style.backgroundColor == "rgb(228, 228, 220)") {
         document.body.style.backgroundColor = "grey";
-        document.getElementById("headerbar").style.backgroundColor = "#154c79";
+        document.getElementById("headerbar").style.backgroundColor = "#114e5c";
+        document.getElementsById("foot").style.backgroundColor = "#402c2c";
+        document.getElementsById("theme").src = "./Icons/sun.png";
+    
     }
 
     else {
-        document.body.style.backgroundColor = "rgb(228, 228, 220)";
+        document.body.style.backgroundColor = "rgb(228, 228, 220)"; 
+
+
         document.getElementById("headerbar").style.backgroundColor = "#fff";
+        document.getElementsById("foot").style.backgroundColor = "#fff";
+        document.getElementsById("theme").src = "./Icons/moon.png";
+    
     }
 }
 

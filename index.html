@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body style="background-color: rgb(228, 228, 220);" >
   <!-- Header section start -->
   <header class="header" id="headerbar">
     <!-- For the logo of the nav bar located inside of header tag -->
@@ -57,8 +57,9 @@
         <img src="./Icons/user.png" alt="user sign in" class="icon-grouping" />
       </a>
 
-      <a href="#">
-        <img src="./Icons/switch.png" alt="dark light mode" onclick="themeSwitcher()" class="icon-grouping" />
+      <a>
+        <img src="./Icons/sun.png" alt="dark light mode" onclick="themeSwitcher()" id="theme" class="icon-grouping" />
+  
       </a>
     </div>
     <!-- End of Icon Div  -->
@@ -232,7 +233,7 @@
           <img src="image/product-3.png" alt="Fresh Oranges">
           <h1>Fresh Meat</h1>
           <div class="price">
-            Rs.150/kg
+            Rs.420/kg
           </div>
           <div class="stars">
             <i class="fa fa-star"></i>
@@ -282,10 +283,10 @@
         </div>
 
         <div class="swiper-slide box">
-          <img src="image/cokacola.jpg" alt="Fresh Oranges">
+          <img src="image/cocacola.png" alt="Fresh Oranges">
           <h1>Beverages</h1>
           <div class="price">
-            Rs.150/kg
+            Rs.150/L
           </div>
           <div class="stars">
             <i class="fa fa-star"></i>
@@ -298,7 +299,7 @@
         </div>
         <!--style="width: 400px;height: 400px;-->
         <div class="swiper-slide box">
-          <img src="image/coffee.jpg" alt="Fresh Oranges">
+          <img src="image/oranges.png" alt="Fresh Oranges">
           <h1>Fresh Orange</h1>
           <div class="price">
             Rs.150/kg
@@ -370,13 +371,9 @@
     </div>
   </section>
   
-
-
-
-
   <!--Our categories section end done by (rabin) -->
-  <!--  footer section -->
-<section class="footer">
+  <!--  footer section start done by (praagya)-->
+<section class="footer" id="foot">
   <div class="box-container">
     <div class="box">
       <h3> GrocerEase <i class="fa fa-shopping-basket"></i></h3>
@@ -421,7 +418,7 @@
 
 </section>
 
-  <!--footer section-->
+  <!--footer section end-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 
