@@ -10,24 +10,24 @@ function displaySearchBar() {
 
 
 function themeSwitcher() {
-    var bodyTheme = document.body; 
-    
+    var bodyTheme = document.body;
+
     if (bodyTheme.style.backgroundColor == "rgb(228, 228, 220)") {
         document.body.style.backgroundColor = "grey";
         document.getElementById("headerbar").style.backgroundColor = "#114e5c";
         document.getElementsById("foot").style.backgroundColor = "#402c2c";
         document.getElementsById("theme").src = "./Icons/sun.png";
-    
+
     }
 
     else {
-        document.body.style.backgroundColor = "rgb(228, 228, 220)"; 
+        document.body.style.backgroundColor = "rgb(228, 228, 220)";
 
 
         document.getElementById("headerbar").style.backgroundColor = "#fff";
         document.getElementsById("foot").style.backgroundColor = "#fff";
         document.getElementsById("theme").src = "./Icons/moon.png";
-    
+
     }
 }
 
@@ -53,6 +53,20 @@ function signinMethod() {
         signinStatus.style.display = 'none';
     }
 }
+
+
+// for the onclick effect of the menubar 
+function navbarFunction() {
+    let navbar = document.querySelector('.navbar');
+    if (navbar.style.display == 'none') {
+        navbar.style.display = 'block';
+    }
+    else {
+        navbar.style.display = 'none';
+    }
+}
+
+
 
 /*our products section carousel effects slider using cdn slider type responsive breakpoints done for the section of our products*/
 var swiper = new Swiper(".product-slider", {

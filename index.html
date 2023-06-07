@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GrocerEase - a ecommerce grocerry platform</title>
 
-  <link rel="icon" href="./image/favicon.PNG" type="image/icon
+  <link rel="icon" href="./image/favicon2.PNG" type="image/icon
   ">
 
   <!-- code for font awesome cdn  -->
@@ -22,7 +22,7 @@
 
 </head>
 
-<body style="background-color: rgb(228, 228, 220);" >
+<body style="background-color: rgb(228, 228, 220);">
   <!-- Header section start -->
   <header class="header" id="headerbar">
     <!-- For the logo of the nav bar located inside of header tag -->
@@ -32,7 +32,7 @@
     </a>
 
     <!-- For navigation section located inside of nav tag -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbarid">
       <a href="#home">home</a>
       <a href="#features">features</a>
       <a href="#products">products</a>
@@ -42,7 +42,7 @@
     <!-- Icons Div-->
     <div class="icons">
       <a href="#" onclick="">
-        <img src="./Icons/menu.png" alt="menubar" id="menubar" class="icon-grouping" />
+        <img src="./Icons/menu.png" alt="menubar" id="menubar" class="icon-grouping" onclick="navbarFunction()" />
       </a>
 
       <a href="#" onclick="displaySearchBar()">
@@ -59,7 +59,7 @@
 
       <a>
         <img src="./Icons/sun.png" alt="dark light mode" onclick="themeSwitcher()" id="theme" class="icon-grouping" />
-  
+
       </a>
     </div>
     <!-- End of Icon Div  -->
@@ -370,53 +370,53 @@
 
     </div>
   </section>
-  
+
   <!--Our categories section end done by (rabin) -->
   <!--  footer section start done by (praagya)-->
-<section class="footer" id="foot">
-  <div class="box-container">
-    <div class="box">
-      <h3> GrocerEase <i class="fa fa-shopping-basket"></i></h3>
-      <p>Feel Free To Follow US On Our Social Media Handlers All The Links Are Given Below.</p>
-      <div class="share">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-whatsapp"></a>
+  <section class="footer" id="foot">
+    <div class="box-container">
+      <div class="box">
+        <h3> GrocerEase <i class="fa fa-shopping-basket"></i></h3>
+        <p>Feel Free To Follow US On Our Social Media Handlers All The Links Are Given Below.</p>
+        <div class="share">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-whatsapp"></a>
+        </div>
       </div>
+
+      <div class="box">
+        <h3> Contact Info </h3>
+        <a href="#" class="links"><i class="fa fa-phone"></i>+9779824059780</a>
+        <a href="#" class="links"><i class="fa fa-envelope"></i>info@example.com</a>
+        <a href="#" class="links"><i class="fa fa-map-marker"></i>Tikhedebal,lalitpur</a>
+      </div>
+
+
+      <div class="box">
+        <h3> Quick Links </h3>
+        <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+        <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+        <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+        <a href="#categories" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+
+      </div>
+      <div class="box">
+        <h3> Newsletter </h3>
+        <p>Subscribe For latest Updates</p>
+        <input type="email" placeholder="Your Email" class="email">
+        <input type="submit" value="Subscribe" class="btn">
+      </div>
+
+
     </div>
 
-    <div class="box">
-      <h3> Contact Info </h3>  
-      <a href="#" class="links"><i class="fa fa-phone"></i>+9779824059780</a>
-      <a href="#" class="links"><i class="fa fa-envelope"></i>info@example.com</a>
-      <a href="#" class="links"><i class="fa fa-map-marker"></i>Tikhedebal,lalitpur</a>
-    </div>
+    <div class="credit">Created By <span>GrocerEase
 
-    
-    <div class="box">
-      <h3> Quick Links </h3>  
-      <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home</a>
-      <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features</a>
-      <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Products</a>
-      <a href="#categories" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
-      
-    </div>
-    <div class="box">
-      <h3> Newsletter </h3>  
-     <p>Subscribe For latest Updates</p>
-     <input type="email" placeholder="Your Email" class="email">
-     <input type="submit" value="Subscribe" class="btn">
-    </div>
+      </span> | All Rights Reserved</div>
 
- 
-  </div> 
-
-  <div class="credit">Created By <span>GrocerEase
-
-  </span> | All Rights Reserved</div>
-
-</section>
+  </section>
 
   <!--footer section end-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
