@@ -10,17 +10,37 @@ function displaySearchBar() {
 
 
 function themeSwitcher() {
-    var bodyTheme = document.body;
+    var bodyTheme = document.body; 
+    document.getElementById("theme").src = toggleImg();
+
     if (bodyTheme.style.backgroundColor == "rgb(228, 228, 220)") {
         document.body.style.backgroundColor = "grey";
-        document.getElementById("headerbar").style.backgroundColor = "#154c79";
+        document.getElementById("headerbar").style.backgroundColor = "#114e5c";
+        document.getElementsById("foot").style.backgroundColor = "#402c2c";
+    
+    
     }
 
     else {
-        document.body.style.backgroundColor = "rgb(228, 228, 220)";
+        document.body.style.backgroundColor = "rgb(228, 228, 220)"; 
+
+
         document.getElementById("headerbar").style.backgroundColor = "#fff";
+        document.getElementsById("foot").style.backgroundColor = "#fff";
+        
+    
     }
 }
+
+function toggleImg() {
+    let initialImg = document.getElementById("theme").src;
+    let srcTest = initialImg.includes('Icons/sun.png');
+    let newImg = {
+      'true':'Icons/moon.png', 
+      'false':'Icons/sun.png'}[srcTest];
+  
+    return newImg;
+  }
 
 function shoppingCartCaller() {
     var cartStatus = document.getElementById("shoppingcart");

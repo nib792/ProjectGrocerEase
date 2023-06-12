@@ -410,9 +410,9 @@ section {
 
 
 /* footer css */
-.footer
+#foot
 {
-  background: #fff;
+  background-color: #fff;
 }
 .footer .box-container
 {
@@ -503,6 +503,7 @@ text-transform: none;
 {
   color: var(--green);
 }
+
 /* footer css */
 
 /* Media queries for the responsiveness of the site  */
