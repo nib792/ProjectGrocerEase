@@ -101,6 +101,11 @@ body {
   display: none;
 }
 
+.header .navbar .active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+
 #searchformbar {
   display: none;
 }
@@ -408,88 +413,73 @@ section {
 
 /*Product categories secion end done by (rabin)*/
 
-
 /* footer css */
-#foot
+.footer
 {
-  background-color: #fff;
+  background: #fff;
 }
-.footer .box-container
-{
-border: 0px solid;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-gap:1.5rem;
+.footer .box-container {
+  border: 0px solid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
 }
-.footer .box-container .box h3
-{
+.footer .box-container .box h3 {
   font-size: 2.5rem;
   color: var(--black);
   padding: 1rem 0;
 }
-.footer .box-container .box h3 i
-{
-  color:green;
+.footer .box-container .box h3 i {
+  color: green;
 }
-.footer .box-container .box .links
-{
+.footer .box-container .box .links {
   display: block;
   font-size: 1.5rem;
   color: var(--light-color);
   padding: 1rem 0;
 }
-.footer .box-container .box .links i
-{
+.footer .box-container .box .links i {
   color: var(--green);
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
-.footer .box-container .box .links:hover i 
-{
+.footer .box-container .box .links:hover i {
   padding-right: 2rem;
 }
 
-.footer .box-container .box p
-{
-  line-height: 1.8; 
+.footer .box-container .box p {
+  line-height: 1.8;
   font-size: 1.5rem;
   color: var(--light-color);
   padding: 1rem 0;
 }
-.footer .box-container .box .share a
-{
+.footer .box-container .box .share a {
   border: 0px solid;
-height: 4rem;
-width: 4rem;
-line-height: 4rem;
-border-radius: .5rem;
-font-size: 2rem;
-color: var(--black);
-margin-left: .2rem;
-background: #eee;
-text-align: center;
-
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 0.2rem;
+  background: #eee;
+  text-align: center;
 }
-.footer .box-container .box .share a:hover
-{
-   background: var(--green);
-   color:#fff;
-
+.footer .box-container .box .share a:hover {
+  background: var(--green);
+  color: #fff;
 }
-.footer .box-container .box .email
-{
+.footer .box-container .box .email {
   width: 100%;
-  margin: .7rem 0;
-padding: 1rem;
-border-radius: .5rem;
-background: #eee;
-font-size: 1.6rem;
-color: var(--black);
-text-transform: none;
-
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
 }
-.footer .credit
-{
+.footer .credit {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
@@ -497,10 +487,8 @@ text-transform: none;
   font-size: 2rem;
   color: var(--black);
   border-top: var(--border);
-
 }
-.footer .credit span
-{
+.footer .credit span {
   color: var(--green);
 }
 
@@ -515,11 +503,41 @@ text-transform: none;
   scroll-padding-top: 8rem; */
   }
 
+  .header {
+    padding: 3rem;
+  }
+
   section {
     padding: 2rem;
   }
 }
 
+@media (max-width: 768px) {
+  #menubar {
+    display: inline-block;
+  }
+  .header .navbar {
+    /* margin: 8px; */
+    position: absolute;
+    width: 30rem;
+    top: 110%;
+    right: 3rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.8rem;
+    background: #fff;
+    display: none;
+    /* top */
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 3rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* For Smaller device  */
 @media (max-width: 450px) {
   html {
     font-size: 50%;

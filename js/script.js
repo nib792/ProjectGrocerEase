@@ -10,25 +10,43 @@ function displaySearchBar() {
 
 
 function themeSwitcher() {
+<<<<<<< HEAD
     var bodyTheme = document.body; 
     document.getElementById("theme").src = toggleImg();
+=======
+    var bodyTheme = document.body;
+>>>>>>> 8bed410e006c8c5c242f8bb9ed54bd2f641e9255
 
     if (bodyTheme.style.backgroundColor == "rgb(228, 228, 220)") {
         document.body.style.backgroundColor = "grey";
         document.getElementById("headerbar").style.backgroundColor = "#114e5c";
         document.getElementsById("foot").style.backgroundColor = "#402c2c";
+<<<<<<< HEAD
     
     
     }
 
     else {
         document.body.style.backgroundColor = "rgb(228, 228, 220)"; 
+=======
+        document.getElementsById("theme").src = "./Icons/sun.png";
+
+    }
+
+    else {
+        document.body.style.backgroundColor = "rgb(228, 228, 220)";
+>>>>>>> 8bed410e006c8c5c242f8bb9ed54bd2f641e9255
 
 
         document.getElementById("headerbar").style.backgroundColor = "#fff";
         document.getElementsById("foot").style.backgroundColor = "#fff";
+<<<<<<< HEAD
         
     
+=======
+        document.getElementsById("theme").src = "./Icons/moon.png";
+
+>>>>>>> 8bed410e006c8c5c242f8bb9ed54bd2f641e9255
     }
 }
 
@@ -64,6 +82,20 @@ function signinMethod() {
         signinStatus.style.display = 'none';
     }
 }
+
+
+// for the onclick effect of the menubar 
+function navbarFunction() {
+    let navbar = document.querySelector('.navbar');
+    if (navbar.style.display == 'none') {
+        navbar.style.display = 'block';
+    }
+    else {
+        navbar.style.display = 'none';
+    }
+}
+
+
 
 /*our products section carousel effects slider using cdn slider type responsive breakpoints done for the section of our products*/
 var swiper = new Swiper(".product-slider", {
