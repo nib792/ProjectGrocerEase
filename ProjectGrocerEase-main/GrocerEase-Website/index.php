@@ -166,9 +166,65 @@ include('functions/common_function.php');
         <!-- creating the footer section -->
         <!-- use of padding of 3 in the  footer section and the text-center class to align the text to the center   and including the file from footer.php-->
         <!-- include footer -->
-        <?php
-        include("./includes/footer.php");
-        ?>
+        <!--  footer section start done by (praagya)-->
+        <section class="footer" id="foot">
+            <div class="box-container">
+                <div class="box">
+                    <h3> GrocerEase <i class="fa fa-shopping-basket"></i></h3>
+                    <p>Feel Free To Follow US On Our Social Media Handlers All The Links Are Given Below.</p>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3> Contact Info </h3>
+                    <a href="#" class="links"><i class="fa fa-phone"></i>+9779824059780</a>
+                    <a href="#" class="links"><i class="fa fa-envelope"></i>info@example.com</a>
+                    <a href="#" class="links"><i class="fa fa-map-marker"></i>Tikhedebal,lalitpur</a>
+                </div>
+
+
+                <div class="box">
+                    <h3> Quick Links </h3>
+                    <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+                    <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+                    <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+                    <a href="#categories" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+
+                </div>
+                <div class="box">
+                    <h3> Newsletter </h3>
+                    <p>Subscribe For latest Updates</p>
+                    <input type="email" placeholder="Your Email" class="email">
+                    <input type="submit" value="Subscribe" class="btn">
+                </div>
+                प्राज्ञ पोखरेल
+            </div>
+            <div class="container">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12374.396770626043!2d85.31151568453896!3d27.6574554479982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb177c56a520d9%3A0xf3d0d1e37134dfb7!2sCosmos%20College%20of%20Management%20and%20Technology!5e0!3m2!1sen!2snp!4v1686368168609!5m2!1sen!2snp"
+                    width="700" height="350" style="border:0px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+    </div>
+
+    <div class="credit">Created By <span>GrocerEase
+
+        </span> | All Rights Reserved</div>
+
+    </section>
+
+
+
+    <?php
+    include("./includes/footer.php");
+    ?>
 
     </div>
 
